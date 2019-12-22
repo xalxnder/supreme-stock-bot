@@ -10,15 +10,15 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/xalexander/Dropbox/Python/Scrape/.venv"
+setenv VIRTUAL_ENV "/Users/xalexander/instock_or_not/.venv"
 
 set _OLD_VIRTUAL_PATH="$PATH:q"
 setenv PATH "$VIRTUAL_ENV:q/bin:$PATH:q"
 
 
 
-if ("(Scrape) " != "") then
-    set env_name = "(Scrape) "
+if ("(instock_or_not) " != "") then
+    set env_name = "(instock_or_not) "
 else
     set env_name = '('"$VIRTUAL_ENV:t:q"') '
 endif

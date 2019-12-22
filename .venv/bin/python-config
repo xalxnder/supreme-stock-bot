@@ -1,4 +1,4 @@
-#!/Users/xalexander/Dropbox/Python/Scrape/.venv/bin/python
+#!/Users/xalexander/instock_or_not/.venv/bin/python
 
 import sys
 import getopt

@@ -57,7 +57,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/xalexander/Dropbox/Python/Scrape/.venv"
+set -gx VIRTUAL_ENV "/Users/xalexander/instock_or_not/.venv"
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (echo $FISH_VERSION | tr "." "\n")[1] -lt 3
@@ -87,8 +87,8 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
 
         # Prompt override provided?
         # If not, just prepend the environment name.
-        if test -n "(Scrape) "
-            printf '%s%s' "(Scrape) " (set_color normal)
+        if test -n "(instock_or_not) "
+            printf '%s%s' "(instock_or_not) " (set_color normal)
         else
             printf '%s(%s) ' (set_color normal) (basename "$VIRTUAL_ENV")
         end

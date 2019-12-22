@@ -1,4 +1,4 @@
-#!/Users/xalexander/Dropbox/Python/Scrape/.venv/bin/python3
+#!/Users/xalexander/instock_or_not/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

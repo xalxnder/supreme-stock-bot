@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/xalexander/Dropbox/Python/Scrape/.venv"
+VIRTUAL_ENV="/Users/xalexander/instock_or_not/.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -61,8 +61,8 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1-}"
-    if [ "x(Scrape) " != x ] ; then
-        PS1="(Scrape) ${PS1-}"
+    if [ "x(instock_or_not) " != x ] ; then
+        PS1="(instock_or_not) ${PS1-}"
     else
         PS1="(`basename \"$VIRTUAL_ENV\"`) ${PS1-}"
     fi

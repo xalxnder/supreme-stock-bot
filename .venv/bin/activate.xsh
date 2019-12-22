@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/Users/xalexander/Dropbox/Python/Scrape/.venv"
+$VIRTUAL_ENV = r"/Users/xalexander/instock_or_not/.venv"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]
@@ -39,7 +39,7 @@ if ${...}.get("PYTHONHOME", ""):
     $_OLD_VIRTUAL_PYTHONHOME = $PYTHONHOME
     del $PYTHONHOME
 
-$VIRTUAL_ENV_PROMPT = "(Scrape) "
+$VIRTUAL_ENV_PROMPT = "(instock_or_not) "
 if not $VIRTUAL_ENV_PROMPT:
     del $VIRTUAL_ENV_PROMPT
 
