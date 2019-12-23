@@ -8,3 +8,4 @@ Script that shows you what items are currently in stock at Supreme.
 
 
 
+![](demo.gif)
