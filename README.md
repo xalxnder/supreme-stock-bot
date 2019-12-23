@@ -6,4 +6,4 @@ Script that shows you what items are currently in stock at Supreme.
 3. pipenv shell
 4. pipenv install
 
-![](demo.gif)
+![](demo_1.gif)
