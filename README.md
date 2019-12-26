@@ -1,4 +1,4 @@
-# instock_or_not
+# Supreme Item Availibity Scraper
 Script that shows you what items are currently in stock at Supreme. 
 
 1. Clone the repo
