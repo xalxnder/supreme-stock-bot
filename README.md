@@ -1,13 +1,10 @@
-# Supreme Item Availibity Scraper
-Script that shows you what items are currently in stock on the Supreme web store. 
+# Supreme Item Availability Bot
+### What does this bot do?
+Tweets items that are currently in stock at Supreme's webstore. 
 
-1. Clone the repo
-2. `cd instock_or_not`
-3. `pipenv shell`
-4. `pipenv install`
-5. `python3 instock_or_not.py`
+[@PremeStockBot](https://twitter.com/PremeStockBot)
 
 ![](demo_1.gif)
 
 ### To-Do
-[] - Take results from command line, and share via twitter bot
+[] - Tweet item pictures, as well.
