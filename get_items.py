@@ -24,7 +24,7 @@ for item in all_items:
 
 
 def get_item_details():
-    for link in item_links[:2]:
+    for link in item_links:
         new_supreme = requests.get(link)
         more_soup = BeautifulSoup(new_supreme.content, 'html.parser')
         actual_item = more_soup.select('#details')
