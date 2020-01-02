@@ -1,3 +1,5 @@
 nohup.out
 tempCodeRunnerFile.py
 credentials.py
+__pycache__/
+.vscode
