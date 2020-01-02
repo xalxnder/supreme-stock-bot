@@ -12,3 +12,6 @@ colorama = "*"
 
 [requires]
 python_version = "3"
+
+[scripts]
+twitter_bot = "python3 twitter_bot.py"
