@@ -5,5 +5,5 @@ Tweets items that are currently in stock at Supreme's webstore.
 [@PremeStockBot](https://twitter.com/PremeStockBot)
 
 
-### To-Do
-[] - Tweet item pictures, as well.
+### FYI
+Supreme's online store is currently closed, until the SS20 season, which is why tweets havent bent sent out in a while. 
