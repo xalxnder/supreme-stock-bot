@@ -11,4 +11,4 @@ Twitter bot that tweets items that are currently in stock on Supreme's webstore.
 
 
 ### FYI
-Bot is only acture during Supreme's Fall/Winter and Spring/Summer drops. 
+Bot is only active during Supreme's Fall/Winter and Spring/Summer drops. 
