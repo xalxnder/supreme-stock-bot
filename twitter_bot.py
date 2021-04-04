@@ -1,13 +1,13 @@
 import tweepy
 import time
-from credentials import *
+from secrets import *
 from get_items import get_item_details, item_details
 
 # Authenticate to Twitter
-auth = tweepy.OAuthHandler(consumer_key,
-                           consumer_secret)
-auth.set_access_token(access_token,
-                      access_token_secret)
+auth = tweepy.OAuthHandler(API_KEY,
+                           API_SECRET)
+auth.set_access_token(ACCESS_TOKEN,
+                      ACCESS_TOKEN_SECRET)
 
 # Create API object
 api = tweepy.API(auth)
