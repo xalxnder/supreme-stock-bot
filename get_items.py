@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from colorama import init, Fore, Back, Style
+#Initialize colorama
 init()
 
 supreme = requests.get("https://www.supremenewyork.com/shop/all")
