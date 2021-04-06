@@ -1,9 +1,14 @@
-# Supreme Item Availability Bot
-### What does this bot do?
-Tweets items that are currently in stock at Supreme's webstore. 
+# Supreme Stock Bot
+Twitter bot that tweets items that are currently in stock on Supreme's webstore. 
 
 [@PremeStockBot](https://twitter.com/PremeStockBot)
 
+# Technologies
+- [Tweepy](https://docs.tweepy.org/en/latest/)
+- [Requests Library](https://requests.readthedocs.io/en/master/)
+- [Beautiful Soup Library](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- [Colorama](https://github.com/tartley/colorama)
+
 
 ### FYI
-Supreme's online store is currently closed, until the SS20 season, which is why tweets havent bent sent out in a while. 
+Bot is only active during Supreme's Fall/Winter and Spring/Summer drops. 
