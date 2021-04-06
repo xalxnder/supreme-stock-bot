@@ -9,7 +9,7 @@ supreme = requests.get("https://www.supremenewyork.com/shop/all")
 # List of links to the items currently in stock
 item_links = []
 # Details of the items in stock.
-item_details = []
+item_details_lst = []
 
 
 # The Beautiful Soup Object
@@ -30,8 +30,10 @@ def get_item_details():
         item_content = BeautifulSoup(supreme_item.content, 'html.parser')
         item_details = item_content.select('#details')
         for description in item_details:
+            print(description.find('h2').text)
             item_name = description.find('h2').text
             item_color = description.find('p').text
-            # print(Fore.GREEN + f"Item:{item_name}\n Color: {color}\n {link}\n")
-            item_details.append(
+            item_details_lst.append(
                 {"Item": item_name, "Color": item_color, "Link": link})
+
+get_item_details()
