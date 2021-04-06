@@ -3,3 +3,4 @@ tempCodeRunnerFile.py
 secrets.py
 __pycache__/
 .vscode
+Pipfile.lock
