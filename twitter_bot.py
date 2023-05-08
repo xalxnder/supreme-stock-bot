@@ -1,29 +1,27 @@
-import tweepy
-import time
-from secrets import *
-from get_items import get_item_details, item_details
+from tweepy import API, OAuthHandler
+import os
 
-# Authenticate to Twitter
-auth = tweepy.OAuthHandler(API_KEY,
-                           API_SECRET)
-auth.set_access_token(ACCESS_TOKEN,
-                      ACCESS_TOKEN_SECRET)
 
-# Create API object
-api = tweepy.API(auth)
+class Bot(API):
+    def __init__(self):
+        super().__init__()
+        self.API_KEY = os.getenv("TWITTER_API_KEY")
+        self.API_SECRET = os.getenv("TWITTER_API_SECRET")
+        self.ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
+        self.ACCESS_TOKEN_SECRET = os.getenv("TWITTER_TOKEN_SECRET")
 
-try:
-    api.verify_credentials()
-    print("All good!")
-except:
-    print("Error during authentication")
+    def api_boject(self):
+        # Authenticate to Twitter
+        auth = OAuthHandler(self.API_KEY, self.API_SECRET)
+        auth.set_access_token(self.ACCESS_TOKEN, self.ACCESS_TOKEN_SECRET)
+        api = API(auth)
+        return api
 
-user = api.me()
-
-get_item_details()
-
-for i in item_details:
-    api.update_status(
-        f"{i['Item']} is currently in stock.\n Color: {i['Color']}\n {i['Link']}")
-    print("Tweet posted successfully.")
-    time.sleep(30)
+    def credentials_verifier(self, api_object):
+        try:
+            api_object.verify_credentials()
+            print("All good!")
+            return True
+        except:
+            print("Error during authentication")
+            return False
