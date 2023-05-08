@@ -16,9 +16,10 @@ class SiteScraper(Options):
         self.item_details_lst = []
         self.main_content_class = "bpS-flexWrap-wrap"
         self.supreme_url = "https://us.supreme.com"
-        self.color_class = (
-            "fontWeight-bold mb-s display-none bpS-display-block js-variant"
-        )
+        self.color_class = "fontWeight-bold mb-s \
+                            display-none \
+                            bpS-display-block js-variant"
+
         self.item_title_class = "product-title"
         pass
 
@@ -33,19 +34,22 @@ class SiteScraper(Options):
         return self.item_links
 
     def get_item_details(self, list_of_link):
-        for link in list_of_link[:2]:
-            self.driver.get(link)
-            item_content = BeautifulSoup(self.driver.page_source, "html.parser")
-            color = item_content.find(
-                "div",
-                attrs={"class": self.color_class},
-            ).text
-            description = item_content.find(
-                "h1",
-                attrs={"class": self.item_title_class},
-            ).text
-            self.item_details_lst.append(
-                {"Item": description, "Color": color, "Link": link}
-            )
-            print(self.item_details_lst)
+        for link in list_of_link:
+            try:
+                self.driver.get(link)
+                item_content = BeautifulSoup(self.driver.page_source, "html.parser")
+                color = item_content.find(
+                    "div",
+                    attrs={"class": self.color_class},
+                ).text
+                description = item_content.find(
+                    "h1",
+                    attrs={"class": self.item_title_class},
+                ).text
+                self.item_details_lst.append(
+                    {"Item": description, "Color": color, "Link": link}
+                )
+                print(self.item_details_lst)
+            except:
+                pass
         return self.item_details_lst
