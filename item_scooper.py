@@ -16,12 +16,11 @@ class SiteScraper(Options):
         self.item_details_lst = []
         self.main_content_class = "bpS-flexWrap-wrap"
         self.supreme_url = "https://us.supreme.com"
-        self.color_class = "fontWeight-bold mb-s \
-                            display-none \
-                            bpS-display-block js-variant"
+        self.color_class = (
+            "fontWeight-bold mb-s display-none bpS-display-block js-variant"
+        )
 
         self.item_title_class = "product-title"
-        pass
 
     def get_item_links(self):
         self.driver.get(self.homepage)
@@ -49,7 +48,7 @@ class SiteScraper(Options):
                 self.item_details_lst.append(
                     {"Item": description, "Color": color, "Link": link}
                 )
-                print(self.item_details_lst)
+                print(f"Adding {description} - {color} to list of items")
             except:
                 pass
         return self.item_details_lst
