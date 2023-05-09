@@ -1,8 +1,6 @@
 from item_scooper import SiteScraper
 from twitter_bot import Bot
-import tweepy
 import time
-
 
 scraper = SiteScraper()
 supreme_bot = Bot()
@@ -16,8 +14,11 @@ user = api.get_user(screen_name="PremeStockBot")
 
 
 for item in supreme_items:
-    api.update_status(
-        f"{item['Item']} is currently in stock.\n Color: {item['Color']}\n {item['Link']}"
-    )
-    print("Tweet posted successfully.")
+    try:
+        api.update_status(
+            f"{item['Item']} is currently in stock.\n Color: {item['Color']}\n {item['Link']}"
+        )
+        print("Tweet posted successfully.")
+    except:
+        pass
     time.sleep(10)
