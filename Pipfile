@@ -9,7 +9,7 @@ verify_ssl = true
 beautifulsoup4 = "*"
 colorama = "*"
 tweepy = "*"
-requests = "~=2.28.0"
+requests = "~=2.31.0"
 selenium = "*"
 webdriver-manager = "*"
 
